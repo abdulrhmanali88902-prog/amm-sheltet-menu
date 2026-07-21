@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #3b2416;
+    color:#D89A3E ;
+    
+}
+ body{
+     font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    max-width:480px;
+    margin:0 auto ;
+
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+ #logo{
+    width: 70px;
+}
+.button{
+    text-align: center;
+    margin:10px ;
+     
+}
+#button-call,#text,#number,#icon{
+    color: black;
+    background-color: #D89A3E;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    font-size:medium;
+}
+.menu-scroll{
+    display: flex;
+    overflow-x:auto ;
+    background-color: #553521e5;
+    font-size:x-large;
+    gap: 10px;
+    padding: 10px;
+    direction: rtl;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.menu-scroll button{
+    color: black;
+    background-color: #D89A3E;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 0;
+    flex-shrink: 0;
+    padding: 8px 10px;
+    white-space: nowrap;
+}
+img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+#word{
+    text-align: center;
+}
+#photo-fatyer{
+    width: 100%;
+}
+.category-photos img{
+    width: 480px;
+    height:200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+.head-of-menu,.prices,#word{
+    direction: rtl;
+}
+.prices{
+    border-collapse: collapse;
+    width: calc(100% - 0px);
+    margin: 0 10px;
+    table-layout: fixed;
+    
+}
+table{
+    text-align: center;
+    width: 100%;
+    margin: 0 10px;
+}
+.prices tbody td,.prices thead th {
+    border-bottom: 1px solid #5c4632;
+}
+.prices tbody td:nth-child(1){
+    text-align: right;
+}
+.menu-content{
+    display: none;
+}
+
+#menu-hadek{
+    display: block;
+}
+#button-call{
+      text-decoration: none;
+}
+
+.menu-scroll button{
+    background-color: #D89A3E;
+    color: #3b2416;
+    transition: 0.3s;
+}
+
+.menu-scroll button.active{
+    background-color: #8b4b1f;
+    color: #ffffff;
+}
+
+.prices th:nth-child(2),
+.prices td:nth-child(2){
+    padding-left:px;
+}
+.menu-scroll button{
+    font-weight: 600;
+}
+.prices thead th{
+    font-weight: 700;
+}
+.prices td{
+    word-wrap: break-word;
+}
+.prices th:nth-child(1),
+.prices td:nth-child(1){
+    width: 55%;
+}
+
+.prices th:nth-child(2),
+.prices td:nth-child(2),
+.prices th:nth-child(3),
+.prices td:nth-child(3){
+    width: 22.5%;
+}

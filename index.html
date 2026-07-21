@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منيو مطعم عم شلتت</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="logo">
+        <img id="logo" src="photos/logo.png" alt="logo1">
+    </section>
+
+    <section class="button">
+        <a id="button-call" href="tel:17291">
+            <span id="icon">📞</span>
+            <span id="text">اتصل</span>
+            <span id="number">17291</span>
+        </a>
+
+    </section>
+    <section class="menu-scroll">
+        <button onclick="showMenu('menu-hadek', this)">فطير حادق</button>
+
+        <button  onclick="showMenu('menu-sandwich', this)">قلبظ عربي</button>
+       
+        <button onclick="showMenu('menu-helo', this)">فطير حلو</button>
+
+        <button  onclick="showMenu('menu-extra', this)"> الإضافات</button>
+
+        <button  onclick="showMenu('menu-drinkis',this)"> مشروبات</button>
+
+        <button  onclick="showMenu('menu-offers',this)"> العروض</button>
+    </section>
+
+
+       <div class="menu-content" id="menu-hadek" >
+        <section class="photos">
+        <img src="photos/offer-2.png" alt="offer-1">
+    </section>
+
+    <br>
+    <hr color="#D89A3E">
+    <table class="prices">
+        <br>
+        <thead id="head-of-menu">
+            <tr>
+                 <th style="text-align: right;">الصنف</th>
+                 <th>وسط</th>
+                 
+                 
+                 <th>كبير</th>
+             </tr>
+        </thead>
+        <tbody>
+    <tr>
+        <td>مشكل جبن <span>Mix Cheese</span></td>
+        <td>190</td>
+        <td>270</td>
+    </tr>
+
+    <tr>
+        <td>بسطرمة <span>Basterma</span></td>
+        <td>220</td>
+        <td>310</td>
+    </tr>
+
+    <tr>
+        <td>بسطرمة كيري <span>Basterma Kiri</span></td>
+        <td>250</td>
+        <td>340</td>
+    </tr>
+
+    <tr>
+        <td>تشيكن كوردون بلو <span>Chicken Cordon Bleu</span></td>
+        <td>200</td>
+        <td>295</td>
+    </tr>
+
+    <tr>
+        <td>تشيكن فاهيتا <span>Chicken Fajita</span></td>
+        <td>220</td>
+        <td>320</td>
+    </tr>
+
+    <tr>
+        <td>تشيكن مشروم <span>Chicken Mushroom</span></td>
+        <td>240</td>
+        <td>320</td>
+    </tr>
+
+    <tr>
+        <td>فراخ رانش <span>Chicken Ranch</span></td>
+        <td>240</td>
+        <td>320</td>
+    </tr>
+
+    <tr>
+        <td>هوت دوج <span>Hot Dog</span></td>
+        <td>190</td>
+        <td>270</td>
+    </tr>
+
+    <tr>
+        <td>هوت صوص تشيكن <span>Hot Sauce Chicken</span></td>
+        <td>240</td>
+        <td>340</td>
+    </tr>
+
+    <tr>
+        <td>كيري <span>Kiri Cheese</span></td>
+        <td>190</td>
+        <td>300</td>
+    </tr>
+
+    <tr>
+        <td>مشكل لحوم مدخنة <span>Mix Cold Cuts</span></td>
+        <td>220</td>
+        <td>340</td>
+    </tr>
+
+    <tr>
+        <td>لحوم مشكلة <span>Mix Meats</span></td>
+        <td>260</td>
+        <td>370</td>
+    </tr>
+
+    <tr>
+        <td>مشكل خضار بالمشروم <span>Mix Vegetables with Mushrooms</span></td>
+        <td>190</td>
+        <td>270</td>
+    </tr>
+
+    <tr>
+        <td>سجق شرقي <span>Oriental Sausage</span></td>
+        <td>210</td>
+        <td>315</td>
+    </tr>
+
+    <tr>
+        <td>سجق بالكيري <span>Sausage With Kiri</span></td>
+        <td>235</td>
+        <td>335</td>
+    </tr>
+
+    <tr>
+        <td>جمبري <span>Shrimp</span></td>
+        <td>330</td>
+        <td>440</td>
+    </tr>
+
+    <tr>
+        <td>لحمة مفرومة <span>Ground Beef</span></td>
+        <td>220</td>
+        <td>300</td>
+    </tr>
+
+    <tr>
+        <td>فراخ بصوص المعصفر <span>Spiced Yellow Chicken</span></td>
+        <td>245</td>
+        <td>325</td>
+    </tr>
+
+    <tr>
+        <td>سجق بصوص المعصفر <span>Sausage in Yellow Spices</span></td>
+        <td>215</td>
+        <td>325</td>
+    </tr>
+
+    <tr>
+        <td>فطيرة العمدة</td>
+        <td colspan="2">570</td>
+    </tr>
+
+    <tr>
+        <td>فطيرة برومكس</td>
+        <td colspan="2">400</td>
+    </tr>
+
+    <tr>
+        <td>مشلتت شلنوتة</td>
+        <td colspan="2">150</td>
+    </tr>
+
+    <tr>
+        <td>قطعة مشلتت <span>Meshaltet Slice</span></td>
+        <td colspan="2">50</td>
+    </tr>
+
+    <tr>
+        <td>مشلتت عم شلتت <span>Meshaltet 3m Shaltat</span></td>
+        <td colspan="2">240</td>
+    </tr>
+</tbody>
+      
+    </table>
+</div>
+
+        <div class="menu-content" id="menu-sandwich">
+          <section class="photos">
+        <img id="photos-offers-2" src="photos/offer 1.png" alt="offer-1">
+    </section>
+
+    <br>
+    <hr color="#D89A3E">
+    <br>
+    <table class="prices">
+        <thead id="head-of-menu2">
+            <tr>
+                <th style="text-align: right;">الصنف</th>
+                <th>السعر</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>قلبظ لحم مفروم Qalbez Ground Meat</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>قلبظ ميكس جبنة Qalbez Mix Cheese</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td>قلبظ ميكس لحوم مدخنة  Mix Smoked Meats</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>قلبظ بسطرمة كيري Qalbez Basterma Kiri</td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td>قلبظ دجاج Qalbez Chicken</td>
+                <td>230</td>
+            </tr>
+            <tr>
+                <td>قلبظ سجق Qalbez Sausage</td>
+                <td>230</td>
+            </tr>
+            <tr>
+                <td>قلبظ مشكل لحوم Qalbez Mix Meats</td>
+                <td>270</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+        <div class="menu-content" id="menu-helo">
+            <section class="photos">
+        <img  src="photos/offer-4.png" alt="">
+    </section>
+
+    <br>
+    <hr color="#D89A3E">
+    <br>
+
+
+
+        <table class="prices">
+        <thead id="head-of-menu3">
+            <tr>
+                 <th style="text-align: right;">الصنف</th>
+                 <th>السعر</th>
+                 
+             </tr>
+        </thead>
+        <tbody>
+    <tr>
+        <td>موز بالنوتيلا <span>Banana Nutella</span></td>
+        <td>160</td>
+    </tr>
+
+    <tr>
+        <td>كاسترد <span>Custard</span></td>
+        <td>90</td>
+    </tr>
+
+    <tr>
+        <td>عسل بالقشطة <span>Honey Cream</span></td>
+        <td>185</td>
+    </tr>
+
+    <tr>
+        <td>نوتيلا <span>Nutella</span></td>
+        <td>185</td>
+    </tr>
+
+    <tr>
+        <td>أربع مواسم <span>Four Season</span></td>
+        <td>260</td>
+    </tr>
+
+    <tr>
+        <td>بغاشة بالسكر <span>Sugar Bogasta</span></td>
+        <td>90</td>
+    </tr>
+</tbody>
+
+    </table>
+</div>
+
+        <div class="menu-content" id="menu-extra">
+        <table class="prices">
+        <thead id="head-of-menu4">
+            <tr>
+                 <th style="text-align: right;">الاضافه</th>
+                 <th>وسط</th>
+                 <br>
+                 <th>كبير</th>
+             </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>لحوم Meat</td>
+                <td>55</td>
+                <td>85</td>
+            </tr>
+
+            <tr>
+                <td>جبنة كيري Kiri Cheese</td>
+                <td>35</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>هوت دوج Hot Dog</td>
+                <td>40</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>جمبري Shrimp</td>
+                <td>80</td>
+                <td>110</td>
+            </tr>
+
+            <tr>
+                <td>دجاج Chicken</td>
+                <td>50</td>
+                <td>70</td>
+            </tr>
+
+            <tr>
+                <td>خضروات Vegetables</td>
+                <td>25</td>
+                <td>35</td>
+            </tr>
+
+            <tr>
+                <td>مشروم Mushroom</td>
+                <td>30</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>صوص باربيكيو Barbecue Sauce</td>
+                <td>25</td>
+                <td>35</td>
+            </tr>
+
+            <tr>
+                <td>رانش Ranch</td>
+                <td>25</td>
+                <td>35</td>
+            </tr>
+
+            <tr>
+                <td>سجق Sausage</td>
+                <td>60</td>
+                <td>80</td>
+            </tr>
+
+            <tr>
+                <td>بسطرمة Basterma</td>
+                <td>80</td>
+                <td>95</td>
+            </tr>
+
+            <tr>
+                <td>موتزاريلا Mozzarella</td>
+                <td>35</td>
+                <td>45</td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+</div>
+
+
+       <div class="menu-content" id="menu-drinkis">
+    <br>
+    <table class="prices">
+        <thead>
+            <tr>
+                <th style="text-align: right;">المشروب</th>
+                <th>السعر</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>  بيبسي V كولا pepsi v cola</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <td>مياه معدنية صغيرة small water</td>
+                <td>10</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+           <div class="menu-content" id="menu-offers">
+    <br>
+    <table class="prices">
+        <thead>
+            <tr>
+                <hr color="#D89A3E">
+                <img  src="photos/offer-2.png" alt="">
+                <hr color="#D89A3E">
+                
+            </tr>
+        </thead>
+        <tbody>
+        
+
+        </tbody>
+    </table>
+</div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
